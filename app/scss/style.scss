@@ -4,6 +4,160 @@
 @import 'libs';
 @import 'global';
 
+.header {
+
+  &__inner {}
+}
+
+
+
+.header-top {
+ 
+  
+  &__inner{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  &__form {
+    margin-right: 100px;
+    display: flex;
+    height: 43px;
+    max-width: 340px;
+   
+  }
+
+  &__input {
+    width: 284px;
+    padding: 9px 10px 8px 23px;
+    @extend %fm-500;
+    line-height: 27px;
+    font-size: 16px;
+    color: rgba(34, 34, 34, 1);
+   background: rgba(201, 227, 243, 0.21);
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  &__search {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 56px;
+    background-color: $accent-cl;
+    border: none;
+    padding: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+  }
+
+  &__search-img {}
+
+  &__phone {
+    margin-left: auto;
+    &:hover .header-top__banner{
+     
+    }
+    
+  }
+
+  &__phone-img {
+    
+  }
+
+  &__banner {
+    display: inline-block;
+    
+    position: absolute;
+    width: 174px;
+    height: 33px;
+    padding: 6px 4px 5px 5px;
+     right: 25%;
+     top: 75px;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.12);
+    @extend %fm-600;
+    font-size: 12px;
+    line-height: 20px;
+    color: $body-cl;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 173px;
+    border-radius: 4px;
+    background-color: $gr-btn;
+    padding: 8px 43px 9px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    @extend %fm-600;
+    margin-left: 22px;
+    
+  }
+}
+
+.logo {
+
+  &__img {}
+}
+
+.header-bottom {
+  
+  background-color: $accent-cl;
+  
+  &__inner{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  }
+  &__menu {
+    margin-left: auto;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {}
+  .header-bottom__list-item+.header-bottom__list-item{
+    margin-left: 33px;
+  }
+  &__link {
+    color: #fff;
+    @extend %fm-600;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__cart {
+    margin-left: 76px;
+    margin-right: 8px;
+    position: relative;
+  }
+
+  &__cart-img {}
+
+  &__span {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    @extend %fm-600;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
 
 
 @import 'media';
