@@ -107,7 +107,8 @@
 
 .header-bottom {
   
-  background-color: $accent-cl;
+  background: #025C94;
+
   
   &__inner{
     display: flex;
@@ -158,6 +159,111 @@
     line-height: 20px;
   }
 }
+
+.top-slider {
+  background: url('../images/top-slider/background.svg') 50% 50%/cover no-repeat;
+  
+  
+  &__items {
+    padding: 60px 0 46px;
+    min-height: calc(100vh - 187px);
+  }
+
+  &__item {
+   
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 600px;
+  }
+
+  &__title {
+    padding-top: 25px;
+    font-size: 52px;
+    line-height: 70px;
+    @extend %fm-700;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+
+  &__link-more {
+    display: inline-block;
+    background-color: $gr-btn;
+    border-radius: 15px;
+    padding: 2px 25px;
+    @extend %fm-600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    @extend %fm-400;
+    line-height: 28px;
+    color:rgba(255, 255, 255, .8);
+    margin-bottom: 20px;
+  }
+
+  &__link-purchase {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    padding: 17px 25px;
+    font-size: 16px;
+    line-height: 27px;
+    color: $body-cl;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__image-big {
+    width: 311px;
+    height: 483px;
+    object-fit: cover;
+  }
+
+  &__image-thumb {
+    width: 104px;
+    height: 176px;
+    object-fit: cover;
+    margin-left: 6px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      margin-left: 3px;
+      button{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        font-size: 0;
+        padding: 0;
+        border: none;
+        background: rgba(0, 101, 164, 0.5);
+       
+       
+      }
+     &.slick-active{
+        button{
+         background: #025C94; 
+        }
+      }
+    }
+  }
+}
+
 
 .footer {}
 
@@ -248,8 +354,6 @@
     color:rgba(255, 255, 255, 0.6);
   }
 }
-
-
 
 .footer-bottom {
   padding: 29px 0 28px;
