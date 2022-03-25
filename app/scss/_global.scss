@@ -6,7 +6,7 @@ body{
 body{
   @extend %fm-500;
   font-size: 16px;
-  line-height: 32;
+  line-height: 32px;
   color: $body-cl;
   display: flex;
   flex-direction: column;
@@ -22,8 +22,52 @@ body{
   margin: 0 auto;
 }
 
+.top {
+  padding: 24px 0;
+}
+.breadcambs {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-right: 20px;
+    position: relative;
+    &:after{
+      content: '/';
+      color: rgba(34, 34, 34, 0.5);
+      position: absolute;
+      top: 0;
+      right: 7px;
+    }
+    &:nth-last-child(2){
+      &:after{
+        color: $body-cl;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+
+      .breadcambs__link{
+        color: $body-cl;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
 
 
 
+  &__link {
+    color: rgba(34, 34, 34, 0.5);
+    font-size: 12px;
+    line-height: 20px;
+    @extend %fm-600;
+   
+}
+
+}
 
 

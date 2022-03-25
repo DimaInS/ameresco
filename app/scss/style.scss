@@ -159,5 +159,131 @@
   }
 }
 
+.footer {}
+
+.footer-top {
+  background-color: #303030;
+  padding: 43px 0 29px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact {}
+
+  &__general {}
+
+  &__general-title {}
+
+  &__title {
+    @extend %fm-500;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  &__general-list {
+    margin-bottom: 25px;
+    
+  }
+
+  &__general-item {
+    margin-bottom: 5px;
+  }
+
+  &__general-link {
+     @extend %fm-500;
+     line-height: 24px;
+     color:rgba(255, 255, 255, 0.6);
+     
+  }
+
+  &__wirehouse {}
+
+  &__wirehouse-title {}
+
+  &__wirehouse-list {}
+
+  &__wirehouse-item {}
+
+  &__wirehouse-link {
+    @extend %fm-500;
+    line-height: 24px;
+    color:rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+  }
+
+  &__price {}
+
+  &__price-title {}
+
+  &__price-text {
+    @extend %fm-500;
+    line-height: 24px;
+    color:rgba(255, 255, 255, 0.6);
+    margin-bottom: 11px;
+    max-width: 420px;
+  }
+
+  &__resourse {
+    text-align: right;
+  }
+
+  &__resourse-title {
+    margin-bottom: 11px;
+    
+  }
+
+  &__resourse-list {}
+
+  &__resourse-item {
+    margin-bottom: 15px;
+
+  }
+
+  &__resourse-link {
+    @extend %fm-500;
+    line-height: 24px;
+    color:rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+
+.footer-bottom {
+  padding: 29px 0 28px;
+  background: #1A1A1A;
+  
+  &__inner{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  &__copy {
+    color: #fff;
+    line-height: 30px;
+
+  }
+
+  &__copy-text {
+    display: flex;
+  }
+
+  &__copy-item {}
+
+  &__copy-img {
+    margin: 0 10px;
+  }
+}
+
+.logo-footer {}
+
+.logo {
+
+  &__footer-img {}
+}
+
+
 
 @import 'media';
