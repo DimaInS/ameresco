@@ -21,6 +21,18 @@
   font-weight: 600;
 }
 
+%grn-btn{
+   display: inline-block;
+   background-color: #00853F;
+   max-width: 160px;
+   border-radius: 15px;
+   padding: 2px 11px;
+   @extend %fm-600;
+   font-size: 16px;
+   line-height: 27px;
+   color: #fff;
+}
+
 $body-cl: #222222;
 $accent-cl: #0065A4;
 $gr-btn: #00853F;
