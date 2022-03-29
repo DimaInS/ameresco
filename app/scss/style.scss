@@ -587,6 +587,158 @@
   }
 }
 
+.products {
+  padding: 80px 0 162px;
+  &__inner {
+    display: flex;
+  }
+
+  &__aside {
+    width: 240px;
+    margin-right: 25px;
+  }
+  .aside-title{
+    @extend %fm-600;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+  &__added-inner {
+    border-top: 2px solid #DDDDDD;
+    padding-top: 28px;
+  }
+
+  &__added-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__added-img {
+    width: 98px;
+    height: 83px;
+    object-fit: cover;
+  }
+
+  &__added-content {}
+
+  &__added-text {
+    padding-top: 1px;
+    margin-bottom: 5px;
+    @extend %fm-500;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  &__added-btn {
+    @extend %grn-btn;
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+
+.products-category {
+
+  &__title {}
+
+  &__list {
+    border-top: 2px solid #DDDDDD;
+    padding-top: 12px;
+    margin-bottom: 62px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    @extend %fm-500;
+    font-size: 16px;
+    line-height: 27px;
+    color: $accent-cl;
+  }
+}
+
+.products-added {
+
+  &__title {}
+}
+
+.products-popular {
+  padding-left: 26px;
+  border-left: 2px solid #DDDDDD;
+  margin-top: -9px;
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__top {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__top-box {
+    display: flex;
+    @extend %fm-600;
+    line-height: 27px;
+  }
+
+  &__number {
+    margin-right: 20px;
+  }
+
+  
+
+  &__number-text {}
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn-grid {
+    margin-right: 11px;
+    
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+   
+  }
+   .products-popular__btn--active {
+       .products-fill {
+          fill: #000;
+        }
+      }
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 33px;
+  }
+
+  &__item {
+
+  }
+}
+
+.related-item {
+
+  &__images {}
+
+  &__image {}
+
+  &__text {}
+
+  &__link {}
+}
+
+
 
 
 
