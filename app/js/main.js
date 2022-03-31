@@ -1,4 +1,27 @@
 $(function() {
+     $('.system__kits-link').on('click', function(e) {
+     e.preventDefault();
+    $('.system__kits-link').removeClass('system__kits-link--active');
+    $(this).addClass('system__kits-link--active');
+
+    $('.system__kits-items').removeClass('system__kits-items--active');
+    $($(this).attr('href')).addClass('system__kits-items--active');
+
+    
+  });
+
+
+    $('.system__tabs-btn').on('click', function(e) {
+     e.preventDefault();
+    $('.system__tabs-btn').removeClass('system__tabs-btn--active');
+    $(this).addClass('system__tabs-btn--active');
+
+    $('.system__tabs-item').removeClass('system__tabs-item--active');
+    $($(this).attr('href')).addClass('system__tabs-item--active');
+
+    
+  });
+
 
     $('.products-popular__btn').on('click', function(){
           $('.products-popular__btn').removeClass('products-popular__btn--active');
