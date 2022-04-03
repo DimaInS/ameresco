@@ -1062,6 +1062,80 @@
 		}
 }
 
+.contact {
+  padding: 117px 0 70px;
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__link {
+      @extend %fm-500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $body-cl;
+		}
+
+		&__bottom {
+		}
+
+		&__title {
+      margin-bottom: 52px;
+		}
+
+		&__form {
+		}
+
+		&__input-box {
+      display: flex;
+      justify-content: space-between;
+		}
+
+		&__input {
+      max-width: 555px;
+      width: 100%;
+      @extend %input;
+
+		}
+
+		&__input-phone {
+      @extend %input;
+      width: 100%;
+		}
+
+		&__textarea {
+      @extend %input;
+      min-height: 254px;
+       width: 100%;
+       resize: none;
+		}
+    &__btn{
+      display: block;
+      width: 180px;
+      height: 42px;
+      border-radius: 3px;
+      border: none;
+      padding: 6px 6px;
+      background: linear-gradient(91.21deg, #0065A4 -1.98%, #0065A4 36.4%, #0AA2EE 103.86%);
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+      @extend %fm-600;
+      font-size: 18px;
+      line-height: 30px;
+      color: #fff;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+}
+
+.map {
+  margin-bottom: 70px;
+}
+#map{
+  width: 1136px;
+  height: 296px;
+  margin-bottom: 14px;
+}
 
 
 

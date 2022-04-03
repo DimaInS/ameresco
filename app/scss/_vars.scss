@@ -33,6 +33,22 @@
    color: #fff;
 }
 
+%input{
+display: block;
+border: none;
+padding: 12px 10px;
+margin-bottom: 23px;
+height: 56px;
+border-radius: 4px;
+background: #F4F4F4;
+&::placeholder{
+  @extend %fm-500;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(34, 34, 34, 0.4)
+}
+}
+
 $body-cl: #222222;
 $accent-cl: #0065A4;
 $gr-btn: #00853F;
