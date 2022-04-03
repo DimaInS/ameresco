@@ -72,7 +72,7 @@
     height: 33px;
     padding: 6px 4px 5px 5px;
      right: 25%;
-     top: 75px;
+     top: 70px;
     box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.12);
     z-index: 5;
     transition: all .6s;
@@ -148,8 +148,8 @@
 
   &__span {
     position: absolute;
-    top: -7px;
-    right: -8px;
+    top: -8px;
+    right: -9px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,10 +188,10 @@
   &__title {
     padding-top: 25px;
     font-size: 52px;
-    line-height: 70px;
+    line-height: 71.5px;
     @extend %fm-700;
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   &__link-more {
@@ -201,16 +201,16 @@
     padding: 2px 25px;
     @extend %fm-600;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 25.5px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   &__text {
     @extend %fm-400;
     line-height: 28px;
     color:rgba(255, 255, 255, .8);
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   &__link-purchase {
@@ -246,7 +246,7 @@
     display: flex;
     justify-content: center;
     li{
-      margin-left: 3px;
+      margin-left: 8px;
       button{
         width: 9px;
         height: 9px;
@@ -275,7 +275,7 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 100px;
-    margin-bottom: 122px;
+    margin-bottom: 120px;
   }
 
   &__item {
@@ -299,8 +299,8 @@
   }
 
   &__title {
-    padding-top: 48px;
-    margin-bottom: 16px;
+    padding-top: 56px;
+    margin-bottom: 21px;
     @extend %fm-700;
     font-size: 36px;
     line-height: 51px;
@@ -327,6 +327,7 @@
 
   &__covid-inner {
     text-align: center;
+    margin-right: 32px;
   }
 
   &__covid-title {
@@ -346,19 +347,21 @@
     font-size: 16px;
     line-height: 25px;
     color: #fff;
+    margin-left: 48px;
+
   }
 }
 
 .descr {
  &__inner {
-    padding: 106px 0 78px;
+    padding: 60px 0 78px;
   }
 }
 
 .descr-card {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 44px;
+    margin-bottom: 37px;
   &__img{
     width: 485px;
     height: 406px;
@@ -367,12 +370,13 @@
 
   &__content {
    max-width: 502px;
+   margin-right: 59px;
    
   }
 
   &__title {
-    margin-top: 18px;
-    margin-bottom: 16px;
+    margin-top: 21px;
+    margin-bottom: 20px;
     @extend %fm-700;
     font-size: 40px;
     line-height: 56px;
@@ -409,6 +413,7 @@
     @extend %fm-600;
     line-height: 27px;
     font-size: 16px;
+    margin-bottom: -6px;
   }
 
   &__list {
@@ -499,10 +504,10 @@
 
 .descr-description {
   
-  &__title {}
+ 
 
   &__content {
-    padding: 24px 0 64px;
+    padding: 22px 0 64px;
     border: 2px solid rgba(0, 0, 0, 0.05);
     border-left: none;
     border-right: none;
@@ -512,9 +517,7 @@
     margin-bottom: 40px;
   }
 
-  &__list-item {
-    margin-bottom: 5px;
-  }
+ 
 
   &__position {
     @extend %fm-600;
@@ -591,13 +594,14 @@
 }
 
 .products {
-  padding: 80px 0 162px;
+  padding: 92px 0 162px;
+  margin-left: 35px;
   &__inner {
     display: flex;
   }
 
   &__aside {
-    width: 240px;
+    
     margin-right: 25px;
   }
   .aside-title{
@@ -627,7 +631,6 @@
 
   &__added-text {
     padding-top: 1px;
-    margin-bottom: 5px;
     @extend %fm-500;
     font-size: 12px;
     line-height: 22px;
@@ -652,7 +655,7 @@
   }
 
   &__item {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 
   &__link {
@@ -669,7 +672,7 @@
 }
 
 .products-popular {
-  padding-left: 26px;
+  padding-left: 34px;
   border-left: 2px solid #DDDDDD;
   margin-top: -9px;
   width: 100%;
@@ -741,6 +744,19 @@
   }
 
   &__item {
+    
+    .related-item__images{
+      width: 254px;
+      min-height: 299px;
+      margin-bottom: 20px;
+    }
+    .related-item__image{
+      width: 204px;
+      height: 222px;
+    }
+    .related-item__text{
+      margin-bottom: 2px;
+    }
      .related-item__list{
        display: none;
      }
@@ -793,24 +809,27 @@
   }
 
 }
+.related-item.products-popular__item{
+      max-width: 254px;
+      min-height: 437px;
+}
+
+
 
 .system {
-  padding: 87px 0 70px;
+  padding: 92px 0 90px;
 
-		&__inner {
-		}
-
-		&__description {
-      margin-bottom: 6px;
+    &__description {
+      margin-bottom: 16px;
 		}
 
 		&__description-title {
-      margin-bottom: 50px;
+      margin-bottom: 27px;
 		}
 
 		&__description-img {
       object-fit: cover;
-      margin-bottom: 50px;
+      margin-bottom: 37px;
 		}
 
 		&__description-subtitle {
@@ -835,7 +854,7 @@
       align-items: center;
       flex-wrap: wrap;
       border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-      margin-bottom: 35px;
+      margin-bottom: 33px;
 		}
 
     .system__tabs-btn+.system__tabs-btn{
@@ -863,7 +882,7 @@
 		}
 
 		&__tabs-content {
-      margin-bottom: 35px;
+      margin-bottom: 52px;
 		}
 
 		&__tabs-item {
@@ -888,10 +907,6 @@
       border-radius: 4px;
 		}
 
-		&__tabs-text {
-      margin-bottom: 10px;
-		}
-
 		&__tabs-link {
       margin-bottom: 20px;
       @extend %fm-700;
@@ -905,7 +920,7 @@
 		}
 
 		&__kits-title {
-      margin-bottom: 35px;
+      margin-bottom: 43px;
 		}
 
 		&__kits-inner {
@@ -933,7 +948,7 @@
 
 		&__kits-content {
       border-left: 2px solid #DDDDDD;
-      
+      margin-top: -10px;
 		}
 
 		&__kits-items {
@@ -989,28 +1004,29 @@
 }
 
 .about {
-  padding: 87px 0 60px;
+  padding: 92px 0 80px;
 }
 
 .doing {
-
+    padding-bottom: 25px;
 		&__title {
-      margin-bottom: 60px;
+      margin-bottom: 51px;
 		}
 
 		&__images {
       display: flex;
       justify-content: space-between;
+      padding: 0 12px;
 		}
     &__images-item{
-      margin-bottom: 8px;
+      
       max-width: 326px;
       text-align: center;
     }
 
 		&__img {
       width: 326px;
-      height: 320px;
+      height: 302px;
       object-fit: cover;
       border-radius: 4px;
       margin-bottom: 21px;
@@ -1019,25 +1035,26 @@
     &__images-text{
       @extend %fm-600;
       font-size: 18px;
-      margin-bottom: 32px;
+      margin-bottom: 27px;
     }
 
 		&__text {
-      margin-bottom: 50px;
+      margin-bottom: 32px;
 		}
 }
 
 .team {
 
 		&__title {
-      margin-bottom: 50px;
+      margin-bottom: 42px;
 		}
 
 		&__items {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 40px;
-      grid-row-gap: 55px;
+      grid-row-gap: 52px;
+      padding: 0 15px;
 		}
 
 		&__item {
@@ -1063,11 +1080,12 @@
 }
 
 .contact {
-  padding: 117px 0 70px;
+  padding: 110px 0 70px;
 		&__list {
 		}
 
 		&__item {
+      margin-bottom: -8px;
 		}
 
 		&__link {
@@ -1081,12 +1099,10 @@
 		}
 
 		&__title {
-      margin-bottom: 52px;
+      margin-bottom: 43px;
 		}
 
-		&__form {
-		}
-
+	
 		&__input-box {
       display: flex;
       justify-content: space-between;
@@ -1129,19 +1145,19 @@
 }
 
 .map {
-  margin-bottom: 70px;
+  margin-bottom: 74px;
 }
 #map{
   width: 1136px;
   height: 296px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 
 
 .footer-top {
   background-color: #303030;
-  padding: 43px 0 29px;
+  padding: 43px 0 17px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -1162,20 +1178,17 @@
   }
 
   &__general-list {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     
   }
 
   &__general-item {
-    margin-bottom: 5px;
+   
   }
 
   &__general-link {
-     @extend %fm-500;
-     line-height: 24px;
-     color:rgba(255, 255, 255, 0.6);
-     
-  }
+     @extend %f-link;
+ }
 
   &__wirehouse {}
 
@@ -1186,10 +1199,8 @@
   &__wirehouse-item {}
 
   &__wirehouse-link {
-    @extend %fm-500;
-    line-height: 24px;
-    color:rgba(255, 255, 255, 0.6);
-    margin-bottom: 5px;
+     @extend %f-link;
+    
   }
 
   &__price {}
@@ -1197,11 +1208,11 @@
   &__price-title {}
 
   &__price-text {
-    @extend %fm-500;
-    line-height: 24px;
-    color:rgba(255, 255, 255, 0.6);
-    margin-bottom: 11px;
+     @extend %f-link;
+     line-height: 24px;
+    margin-bottom: 23px;
     max-width: 420px;
+    margin-top: -12px;
   }
 
   &__resourse {
@@ -1216,14 +1227,12 @@
   &__resourse-list {}
 
   &__resourse-item {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
   }
 
   &__resourse-link {
-    @extend %fm-500;
-    line-height: 24px;
-    color:rgba(255, 255, 255, 0.6);
+     @extend %f-link;
   }
 }
 

@@ -33,6 +33,12 @@
    color: #fff;
 }
 
+%f-link{
+  @extend %fm-500;
+    line-height: 30px;
+    color:rgba(255, 255, 255, 0.6);
+}
+
 %input{
 display: block;
 border: none;
