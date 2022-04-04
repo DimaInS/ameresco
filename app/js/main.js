@@ -1,4 +1,16 @@
 $(function() {
+
+    $('.footer-top__title').on('click', function(){ //сворачивает список под заголовком
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  });
+
+    $('.header-bottom__burger').on('click', function(){
+       $('.header-bottom__burger').toggleClass('header-bottom__burger--active');
+      $('.header-bottom__menu').toggleClass('header-bottom__menu--active');
+     
+    });
+
      $('.system__kits-link').on('click', function(e) {
      e.preventDefault();
     $('.system__kits-link').removeClass('system__kits-link--active');

@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    flex-wrap: wrap;
   }
   &__form {
     margin-right: 100px;
@@ -115,6 +115,9 @@
   justify-content: space-between;
   align-items: center;
   height: 55px;
+  }
+  &__burger{
+    display: none;
   }
   &__menu {
     margin-left: auto;
@@ -1207,7 +1210,8 @@
 
   &__price-title {}
 
-  &__price-text {
+  &__price-text,
+  &__price-text1 {
      @extend %f-link;
      line-height: 24px;
     margin-bottom: 23px;
