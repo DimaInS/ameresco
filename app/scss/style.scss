@@ -580,7 +580,7 @@
   &__image {
     width: 244px;
     height: 266px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__text {
@@ -601,6 +601,7 @@
   margin-left: 35px;
   &__inner {
     display: flex;
+    position: relative;
   }
 
   &__aside {
@@ -679,6 +680,7 @@
   border-left: 2px solid #DDDDDD;
   margin-top: -9px;
   width: 100%;
+  
   &__title {
     margin-bottom: 30px;
   }
@@ -708,9 +710,16 @@
   &__buttons {
     display: flex;
   }
+  &__filter-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
 
   &__btn-grid {
-    margin-right: 11px;
+    margin: 0 12px;
     
   }
 
@@ -774,6 +783,7 @@
        .related-item__list {
          display: flex;
          justify-content: space-between;
+         
          &-content{
            margin-left: 30px;
            display: flex;
@@ -812,11 +822,6 @@
   }
 
 }
-.related-item.products-popular__item{
-      max-width: 254px;
-      min-height: 437px;
-}
-
 
 
 .system {
