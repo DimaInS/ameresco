@@ -1173,12 +1173,6 @@
     justify-content: space-between;
   }
 
-  &__contact {}
-
-  &__general {}
-
-  &__general-title {}
-
   &__title {
     @extend %fm-500;
     line-height: 30px;
@@ -1192,30 +1186,16 @@
     
   }
 
-  &__general-item {
-   
-  }
-
+  
   &__general-link {
      @extend %f-link;
  }
 
-  &__wirehouse {}
-
-  &__wirehouse-title {}
-
-  &__wirehouse-list {}
-
-  &__wirehouse-item {}
 
   &__wirehouse-link {
      @extend %f-link;
     
   }
-
-  &__price {}
-
-  &__price-title {}
 
   &__price-text,
   &__price-text1 {
@@ -1235,7 +1215,7 @@
     
   }
 
-  &__resourse-list {}
+  
 
   &__resourse-item {
     margin-bottom: 10px;
